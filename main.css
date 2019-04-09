@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+    height: 100%;
+    margin: 0;
+    /* opacity:.5; */
+    background-color: #fffdd0;
+    /* background-image: url("media/boston-extra-long.jpg"); */
+    background-size: 100%;
+    filter: contrast(150%);
+}
+
+nav, footer {
+    padding: 1% 0;
+    background-color: #000066;
+    /* filter: saturate(1); */
+    /* opacity:.9; */
+    filter: contrast(180%);
+    /* color: white; */
+    color: #FDFF00;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+}
+
+nav>div {
+    max-width: 50%;
+    min-width: 50%;
+    height: inherit;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    border: 0;
+    background-color: transparent;
+    /* show a hand cursor on hover; some argue that we
+    should keep the default arrow cursor for buttons */
+    cursor: pointer;
+}
+
+.bio-button, .projects-button {
+    text-decoration: none;
+    color: #FDFF00;
+    text-decoration: underline;
+}
+
+.current {
+    /* color:rgb(156, 154, 154); */
+    filter: 0;
+    font: none;
+    color: rgb(109, 142, 172);
+    text-decoration: underline;
+}
+
+header {
+    padding: 1% 0;
+    font-size: 10px;
+    margin-top: 80px;
+    color: #000066;
+    /* color:white; */
+}
+
+section {
+    /* min-height: 30%; */
+    padding: 10px;
+    width: 90%;
+    text-align: left;
+    color: white;
+    background-color: white;
+}
+
+/* .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:30px;
+	right:20px;
+	background-color:rgb(1, 15, 12);
+	color:rgb(1, 15, 12);
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 100px 100px 50px rgb(0, 0, 0);
+    }
+
+   .my-float{
+	margin-top:22px;
+    } */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* justify-items: center; */
+    align-items: center;
+    margin: 0;
+    height: 95%;
+}
+
+/* #artID{
+    /* margin:20px;
+    margin-left:40px;
+    margin-right:40px; 
+    
+    margin:20px;
+    width: 80%;
+    text-align:center;
+    opacity:1;
+    max-width:660px;
+    display:flex;
+    justify-content: center;
+    display: none;
+    } */
+
+#nend {
+    width: inherit;
+    filter: contrast( 55%);
+}
+
+.main-section {
+    /* max-height:400px; */
+    max-width: 750px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: auto;
+    display: inline-block;
+    height: auto;
+    font-weight: bold;
+    /* border: 5px solid #FDFF00; */
+}
+
+p {
+    margin: 4px;
+    text-indent: 20px;
+    font-size: 16px;
+    opacity: 1;
+    padding-bottom: 0;
+    color: black;
+    font-weight: 400;
+}
+
+/* #lastP{
+        padding-bottom: 7px;
+    } */
+
+.screenshot {
+    height: inherit;
+    width: inherit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.projects {
+    /* max-height:400px; */
+    max-width: 750px;
+    padding: 10px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: auto;
+    display: inline-block;
+    height: auto;
+    font-weight: bold;
+    /* border: 5px solid #FDFF00; */
+}
+
+.project-link{
+    text-decoration: none;
+    color: #000066;
+    text-decoration: underline;
+}
+
+footer {
+    height: 5%;
+    padding-bottom: 0px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.footerinfo{
+    text-decoration: none;
+    color: #FDFF00;
+    text-decoration: underline;
+}
+
+
+#titleDiv {
+    color: #FDFF00;
+}
+
+#footerinfo>a, span {
+    /* font-size:100%; */
+    max-width: 30%;
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 500px) {
+    /* body {
+
+                background-image: url("media/boston\ long.jpg");
+                background-size:100%;
+                filter: none;
+            } */
+    .main-section {
+        /* max-height:800px; */
+        max-width: 500px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .projects {
+        /* max-height:400px; */
+        max-width: 750px;
+        padding: 10px;
+        margin-bottom: 0;
+        margin-top: 10px;
+        border-radius: 10px;
+        overflow: auto;
+        display: inline-block;
+        height: auto;
+        font-weight: bold;
+        max-width: 800px;
+        height: auto;
+        /* border: 5px solid #FDFF00; */
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    /* body {
+
+                background-image: url("media/nend\ copy.jpg");
+                background-size:100%;
+                filter: none;
+            } */
+    /* #bioID{
+                max-height:250px;
+                max-width:550px;
+                font-size:16px;
+            } */
+}
+
+@media screen and (min-width: 1094px) {
+    /* .option-container #button-container{
+            width:90%;
+            width:750px;
+            max-width:90%;
+        } */
+    /*     
+        .float{
+            position:fixed;
+            width:75px;
+            height:75px;
+            top:10%;
+            right:5%;
+            background-color:rgb(1, 15, 12);
+            color:rgb(1, 15, 12);
+            border-radius:50px;
+            text-align:center;
+            box-shadow: 10px 10px 30px #999; */
+    /* body {
+
+            background-image: url("media/nend.jpg");
+            background-size:100%;
+            filter: none;
+        } */
+    /* #bioID{
+                max-width:550px;
+                font-size:16px;
+            } */
+}
+
+/* 
+    @media screen and (min-width: 450px) {
+
+        body {
+
+                background-image: url("media/nend.jpg");
+                background-size:100%;
+                filter: none;
+            }
+        
+
+        #bioID{
+                max-height:250px;
+                max-width:750px;
+                font-size:16px;
+            }
+    } */
