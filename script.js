@@ -16,7 +16,7 @@ function selectInactive(){
 
         let bioSection = $('#mainSection');
         bioSection.toggleClass('hidden');
-        let projectSection = $('#projectSection');
+        let projectSection = $('.projects');
         projectSection.toggleClass('hidden');
         console.log(STATE_On_Bio);
         STATE_On_Bio=!STATE_On_Bio;
