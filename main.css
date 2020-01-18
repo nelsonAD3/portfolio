@@ -186,8 +186,10 @@ footer {
     justify-content: center;
     font-weight: bold;
     /* align-self:flex-end; */
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     left: 0;
+    right: 0;
     bottom: 0;
     width: 100%;
 }
