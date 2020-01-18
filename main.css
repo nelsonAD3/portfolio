@@ -5,23 +5,15 @@
 html {
     margin: 0;
     height: 100%;
+    background: url(media/les_art.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-    /* font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 1.5;
-    height: 100%;
-    min-height:100vh;
-    margin: 0;
 
-    background-color: #fffdd0;
-
-    background-size: 100%;
-    filter: contrast(150%);
-
-    flex-direction: column; */
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     text-align: center;
@@ -29,7 +21,7 @@ body {
     /* height: 100%; */
     margin: 0;
     /* opacity:.5; */
-    background-color: #fffdd0;
+    /* background-color: #fffdd0; */
     /* background-image: url("media/boston-extra-long.jpg"); */
     background-size: 100%;
     filter: contrast(150%);
@@ -116,14 +108,13 @@ main {
     height: 100%;
 }
 
-#nend {
-    width: inherit;
-    filter: contrast( 55%);
+.section-title{
+    font-weight:bold !important;
 }
 
 .main-section {
     /* max-height:400px; */
-    max-width: 750px;
+    max-width: 650px;
     padding: 10px;
     margin-bottom: 0;
     margin-top: 50px;
@@ -132,6 +123,7 @@ main {
     display: inline-block;
     height: auto;
     font-weight: bold;
+    opacity: .95;
     /* border: 5px solid #FDFF00; */
 }
 
@@ -169,7 +161,7 @@ p {
 }
 
 .projects:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .project-link {
@@ -222,15 +214,10 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
-    /* body {
 
-                background-image: url("media/boston\ long.jpg");
-                background-size:100%;
-                filter: none;
-            } */
     .main-section {
         /* max-height:800px; */
-        max-width: 500px;
+        max-width: 850px;
         font-size: 18px;
         font-weight: bold;
     }
